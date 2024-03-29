@@ -1,5 +1,6 @@
 * {box-sizing: border-box;}
 .slide {display: none;}
+body {font-family: verdana, sans-serif;}
 img {vertical-align: middle;}
 /* Navigation bar */
 ul {

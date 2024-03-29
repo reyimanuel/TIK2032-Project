@@ -12,12 +12,12 @@
         <a style="text-align:center;" href="index.html"><h2>Miracle Sumajow</h2></a>
         <p style="text-align:center;">Informatic Student</p>
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#A1">About</a></li>
-                    <li><a href="#A2">Gallery</a></li>
-                    <li><a href="#A3">Blog</a></li>
+                <ul> 
                     <li><a href="#A4">Contact</a></li>
+                    <li><a href="#A3">Gallery</a></li>
+                    <li><a href="#A2">Article</a></li>
+                    <li><a href="#A1">About</a></li>
+                    <li><a href="#">Home</a></li>
                 </ul>
             </nav>
     </header>
@@ -82,6 +82,101 @@
     <br><hr><br>
 
     <h2 id="A3">Gallery</h2>
+
+    <div class="slideshow">
+
+        <div class="slide fade">
+            <div class="number">1 / 12</div>
+            <img src="images/Dog1.jpg" style="width: 100%;">
+            <div class="text">Image of a dog</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number">2 / 12</div>
+            <img src="images/Dog2.jpg" style="width: 100%;">
+            <div class="text">Image of a dog</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number">3 / 12</div>
+            <img src="images/Dog3.jpg" style="width: 100%;">
+            <div class="text">Image of a dog</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number">4 / 12</div>
+            <img src="images/Dog4.jpg" style="width: 100%;">
+            <div class="text">Image of a dog</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number">5 / 12</div>
+            <img src="images/Dog5.jpg" style="width: 100%;">
+            <div class="text">Image of a dog</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number">6 / 12</div>
+            <img src="images/Dog6.jpg" style="width: 100%;">
+            <div class="text">Image of a dog</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number">7 / 12</div>
+            <img src="images/Cat1.jpg" style="width: 100%;">
+            <div class="text">Image of a cat</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number">8 / 12</div>
+            <img src="images/Cat2.jpg" style="width: 100%;">
+            <div class="text">Image of a cat</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number">9 / 12</div>
+            <img src="images/Cat3.jpg" style="width: 100%;">
+            <div class="text">Image of a cat</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number">10 / 12</div>
+            <img src="images/Cat4.jpg" style="width: 100%;">
+            <div class="text">Image of a dog</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number">11 / 12</div>
+            <img src="images/Cat5.jpg" style="width: 100%;">
+            <div class="text">Image of a dog</div>
+        </div>
+
+        <div class="slide fade">
+            <div class="number">12 / 12</div>
+            <img src="images/Cat6.jpg" style="width: 100%;">
+            <div class="text">Image of a cat</div>
+        </div>
+        
+    </div><br>
+
+    <div style="text-align: center;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+
+<!--
     <table align="center">
         <tr>
             <td>
@@ -128,6 +223,7 @@
             </td>
         </tr>
     </table>
+-->
 
     <section>
         <table>
@@ -146,4 +242,25 @@
         <p style="text-align:right;">Copyright &copy; 2024 Miracle Sumajow.</p>
     </footer>
 </body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
 </html>

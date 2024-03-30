@@ -98,11 +98,15 @@ header.sticky ul li a {
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hero-image {
-        height: 100vh;
+      height: 100vh;
     }
-}
+  
+    .hero-text {
+      top: 40%;
+    }
+  }
 /* Hero */
 
 /* About */

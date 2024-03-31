@@ -82,7 +82,8 @@ header.sticky ul li a {
 /* Hero */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Reybg.jpeg");
-  height: 55%;
+  height: 50%;
+  width: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,16 +98,6 @@ header.sticky ul li a {
   transform: translate(-50%, -50%);
   color: white;
 }
-
-@media screen and (max-width: 768px) {
-    .hero-image {
-      height: 100vh;
-    }
-  
-    .hero-text {
-      top: 40%;
-    }
-  }
 /* Hero */
 
 /* About */

@@ -18,15 +18,23 @@
                     <li><a href="#A3">Gallery</a></li>
                     <li><a href="#A4">Contact</a></li>
                 </ul>
+
+                <div class="menu-toggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
         <!-- navigation bar -->
     </header>
-  
+    <!--Hero Section-->
     <div id="A" class="hero-image">
         <div class="hero-text">
           <h1>I am Miracle Sumajow</h1>
           <p>And I'm a informatics Student</p>
         </div>
       </div>
+    <!--Hero Section-->
 
     <!--About me-->
 
@@ -225,55 +233,30 @@
     <br>
 
     <!--Footer-->
-    <footer class="footer-container">
-        <div class="footer">
-            <div class="footer-heading footer-1">
-                <h2 style="font-size:25px;" id="A4">Contact Me!</h2>
-                <p style="font-size:20px;">&#128231; <a href="mailto:miraclesumajow32@gmail.com">Mail Me!</a></p>
-                <p style="font-size:20px;"><img src="images/Facebook.jpg" alt="Facebook Logo" width="25" height="20"><a href="https://www.facebook.com/imanuel.miracle.16">Facebook</a></p>
-                <p style="font-size:20px;"><img src="images/Instagram.jpg" alt="instagram Logo" width="25" height="25"><a href="https://www.instagram.com/reyimanuel_/">Instagram</a></p>
-                <p style="font-size:20px;"><img src="images/Linkedin.jpg" alt="linkedin Logo" width="25" height="25"><a href="https://www.linkedin.com/in/miracle-sumajow-3ba587240/">Linkedin</a></p>
+    <footer id="A4">
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="mailto:miraclesumajow32@gmail.com"><img src="images/Email.jpg" alt="Facebook Logo" width="50" height="50"></a>
+                <a href="https://www.facebook.com/imanuel.miracle.16"><img src="images/Facebook.jpg" alt="Facebook Logo" width="50" height="50"></a>
+                <a href="https://www.instagram.com/reyimanuel_/"><img src="images/Instagram.jpg" alt="instagram Logo" width="50" height="50"></a>
+                <a href="https://www.linkedin.com/in/miracle-sumajow-3ba587240/"><img src="images/Linkedin.jpg" alt="linkedin Logo" width="50" height="50"></a>
             </div>
-            <div class="footer-heading footer-2">
-                <h2 style="font-size:25px;">Location</h2>
-                <p style="font-size:20px;">&#127968; Manado, North Sulawesi, Indonesia</p>
-                <p style="font-size:20px;">&#128205; Sam Ratulangi University</p>
+            <div class="footerNav">
+                <ul> 
+                    <li><a href="#A">Home</a></li>
+                    <li><a href="#A1">About</a></li>
+                    <li><a href="#A2">Article</a></li>
+                    <li><a href="#A3">Gallery</a></li>
+                    <li><a href="#A4">Contact</a></li>
+                </ul>
             </div>
-            <div class="footer-heading footer-3">
-                <p>Copyright &copy; 2024 all right reserved | Made By Miracle Sumajow.</p>
-            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy; 2024 all right reserved | Made By Miracle Sumajow.</p>
         </div>
     </footer>
     <!--Footer-->
 
 </body>
-
-<script type="text/javascript">
-    window.addEventListener("scroll", function(){
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-    })
-</script>
-
-<script>
-let slideIndex = 0; //Gallery
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("slide");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>    
+<script src="script/javascript.js"></script>  
 </html>

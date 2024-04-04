@@ -170,6 +170,10 @@ header.sticky ul li a:hover {
         transition: all 1s;
         opacity: 0;
     }
+    header ul li a{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
 
     header ul.active {
         transform: translateX(0%);

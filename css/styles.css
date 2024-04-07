@@ -208,6 +208,10 @@ header.sticky ul li a:hover {
     letter-spacing: 0.23em;
     margin: 0;
 }
+
+.hero-span {
+    color: #0877ff;
+}
 /* Hero */
 
 /* About */
@@ -256,7 +260,7 @@ header.sticky ul li a:hover {
     letter-spacing: 2px;
 }
 
-span {
+.content-span {
     color: #0877ff;
 }
 

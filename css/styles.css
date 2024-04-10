@@ -17,6 +17,18 @@ body, html {
     padding: 0;
 }
 
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+}
+
+.reveal.appear {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+
+}
 
 /* Navigation bar */
 header {
@@ -43,9 +55,12 @@ header .name {
     color: whitesmoke;
     text-decoration: none;
     font-size: 2em;
-    text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;
+}
+
+header .name2 {
+    color: #0877ff;
 }
 
 header ul {
@@ -264,11 +279,32 @@ header.sticky ul li a:hover {
     color: #0877ff;
 }
 
-.content-text p {
+.content-text p, .content-information{
     letter-spacing: 1px;
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 45px;
+}
+
+@media screen and (max-width: 1100px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content-text h1, h2, h3 {
+        text-align: center;
+    }
+
+    .content-text p{
+        width: 100%;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .about img {
+        width: 50%;
+    }
+    
 }
 /* About */
 

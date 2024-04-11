@@ -419,6 +419,106 @@ header.sticky ul li a:hover {
 }
 /* Blog */
 
+/* Skills */
+.skills{
+    padding: 5rem 0 2.5rem 0;
+}
+
+.skills > .text{
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.skills-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+}
+
+.skills .row {
+    margin: 1rem 0;
+}
+
+.skills .item {
+    margin: 0.5rem 0;
+    padding: 0.3rem 0;
+}
+
+.skills .item-text {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+    color: whitesmoke;
+}
+
+.skills .item-text span:last-child{
+    position: absolute;
+}
+
+.skills .item-text .w-70{
+    margin-left: 65%;
+}
+
+.skills .item-text .w-50{
+    margin-left: 45%;
+}
+
+.skills .item-text .w-35{
+    margin-left: 30%;
+}
+
+.skills .item-text .w-65{
+    margin-left: 60%;
+}
+
+.skills .item-text .w-80{
+    margin-left: 75%;
+}
+
+.progress {
+    margin: 0.0rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: #0877ff;
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.progress-bar.w-70{
+    width: 70%;
+}
+
+.progress-bar.w-50{
+    width: 50%;
+}
+
+.progress-bar.w-35{
+    width: 35%;
+}
+
+.progress-bar.w-65{
+    width: 65%;
+}
+
+.progress-bar.w-80{
+    width: 80%;
+}
+/* Skills */
+
 /* Gallery */
 .gallery h2 {
     text-align: center;
